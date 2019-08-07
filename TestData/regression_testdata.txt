@@ -1,0 +1,7 @@
+*** Variables ***
+${GLOBAL_TIMEOUT}       5s
+${BROWSER}	            Chrome
+${URL}                  https://mycossite.azurewebsites.net
+${USERNAME_VALID}       admin
+${PASSWORD_VALID}       1234
+${PASSWORD_INVALID}     123

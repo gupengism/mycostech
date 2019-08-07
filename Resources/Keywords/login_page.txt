@@ -1,0 +1,59 @@
+*** Variables ***
+&{LOGIN_PAGE}	         link_Login=xpath=//a[text()='Login']
+...                      label_Signin=xpath=//main/h1[text()='Signin']
+...                      txt_Username=id=Username
+...                      txt_Password=id=Password
+...                      btn_Login=xpath=//input[@type='submit']
+...                      label_TextOnNavBar=xpath=//header//p[contains(@class,'navbar-text')]
+...                      label_AlertMessaged=xpath=//label[@class='text-danger control-label']
+...                      btn_Logout=xpath=//button[@type='submit'][text()='Logout']
+
+&{WORD_LOGIN_PAGE}     UsernameOrPasswordIsNotCorrect=UserName or password is not correct
+...                    Hello=Hello
+...                    Login=Login
+
+*** Keywords ***
+Open application
+    [Arguments]    ${browser}    ${url}
+    Open Browser      ${url}    ${browser}
+    Maximize Browser Window
+    Wait Until Page Contains Element  	&{LOGIN_PAGE}[link_Login]	 ${GLOBAL_TIMEOUT}
+
+Click on 'Login' link
+    Wait Until Page Contains Element  	&{LOGIN_PAGE}[link_Login]	 ${GLOBAL_TIMEOUT}
+    Click Element  	&{LOGIN_PAGE}[link_Login]
+    Wait Until Page Contains Element  	&{LOGIN_PAGE}[label_Signin]	 ${GLOBAL_TIMEOUT}
+
+Input username
+	[Arguments] 	${username}
+	Wait Until Page Contains Element 	&{LOGIN_PAGE}[txt_Username]	   ${GLOBAL_TIMEOUT}
+	Input Text 		&{LOGIN_PAGE}[txt_Username]   	${username}
+
+Input password
+	[Arguments] 	${password}
+	Wait Until Page Contains Element 	&{LOGIN_PAGE}[txt_Password]	   ${GLOBAL_TIMEOUT}
+	Input Text 		&{LOGIN_PAGE}[txt_Password]   	${password}
+
+Click on 'Login' button
+    Wait Until Page Contains Element  	&{LOGIN_PAGE}[btn_Login]	 ${GLOBAL_TIMEOUT}
+    Click Element  	&{LOGIN_PAGE}[btn_Login]
+
+Verify user login success with say 'Hello <logged in username>'
+    [Arguments]     ${username}
+    Wait Until Page Contains Element	&{LOGIN_PAGE}[label_TextOnNavBar]   	${GLOBAL_TIMEOUT}
+	${label}=	Get text 	&{LOGIN_PAGE}[label_TextOnNavBar]
+	Should Be Equal	   ${label}	    &{WORD_LOGIN_PAGE}[Hello] ${username}
+
+Verify message alert 'UserName or password is not correct' is display
+    Wait Until Page Contains Element	&{LOGIN_PAGE}[label_AlertMessaged]   	${GLOBAL_TIMEOUT}
+	${label}=	Get text 	&{LOGIN_PAGE}[label_AlertMessaged]
+	Should Contain 	   ${label}	  &{WORD_LOGIN_PAGE}[UsernameOrPasswordIsNotCorrect]      ignore_case=False
+
+Click on 'Logout' button
+    Wait Until Page Contains Element  	&{LOGIN_PAGE}[btn_Logout]	 ${GLOBAL_TIMEOUT}
+    Click Element  	&{LOGIN_PAGE}[btn_Logout]
+
+Verify user logout success by navigation bar show 'Login' link
+    Wait Until Page Contains Element	&{LOGIN_PAGE}[label_TextOnNavBar]   	${GLOBAL_TIMEOUT}
+	${label}=	Get text 	&{LOGIN_PAGE}[label_TextOnNavBar]
+	Should Be Equal	   ${label}	    &{WORD_LOGIN_PAGE}[Login]
