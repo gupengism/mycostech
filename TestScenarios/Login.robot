@@ -26,9 +26,16 @@ Login should not success with valid username and wrong password
 User can logout by click on 'Logout' button on navigation bar
     [Tags]  Regression    Login    Logout
     Click on 'Login' link
-    Input username      ${USERNAME_VALID}
+    Input username 'admin'
     Input password      ${PASSWORD_VALID}
     Click on 'Login' button
     Verify user login success with say 'Hello <logged in username>'    ${USERNAME_VALID}
     Click on 'Logout' button
     Verify user logout success by navigation bar show 'Login' link
+
+'Admin' can logout by click on 'Logout' button on navigation bar
+    [Tags]  Regression    Login    Logout
+    [Setup]  no operation
+    Given User login to my cos tech as 'admin'
+    When User click on Logout button
+    Then User logout successful and is bring to landding page

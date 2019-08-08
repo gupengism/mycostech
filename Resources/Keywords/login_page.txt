@@ -57,3 +57,21 @@ Verify user logout success by navigation bar show 'Login' link
     Wait Until Page Contains Element	&{LOGIN_PAGE}[label_TextOnNavBar]   	${GLOBAL_TIMEOUT}
 	${label}=	Get text 	&{LOGIN_PAGE}[label_TextOnNavBar]
 	Should Be Equal	   ${label}	    &{WORD_LOGIN_PAGE}[Login]
+
+User login to my cos tech as '${username}'
+    Open application    ${BROWSER}    ${URL}
+    Click on 'Login' link
+    Input username      ${username}
+    Input password      ${PASSWORD_VALID}
+    Click on 'Login' button
+    Verify user login success with say 'Hello <logged in username>'    ${USERNAME_VALID}
+
+User click on Logout button
+    Click on 'Logout' button
+
+User logout successful and is bring to landding page
+    Verify user logout success by navigation bar show 'Login' link
+
+Input username '${username}'
+	Wait Until Page Contains Element 	&{LOGIN_PAGE}[txt_Username]	   ${GLOBAL_TIMEOUT}
+	Input Text 		&{LOGIN_PAGE}[txt_Username]   	${username}

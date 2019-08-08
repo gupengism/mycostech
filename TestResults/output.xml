@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20190807 20:45:03.764" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<robot generated="20190808 10:06:08.590" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
 <suite source="C:\Users\nipont\Desktop\mycostech\TestScenarios" id="s1" name="TestScenarios">
 <suite source="C:\Users\nipont\Desktop\mycostech\TestScenarios\Login.robot" id="s1-s1" name="Login">
 <test id="s1-s1-t1" name="Login should success with valid username and valid password">
@@ -14,12 +14,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:03.998" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
-<status status="PASS" endtime="20190807 20:45:11.000" starttime="20190807 20:45:03.998"></status>
+<msg timestamp="20190808 10:06:08.808" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
+<status status="PASS" endtime="20190808 10:06:17.394" starttime="20190808 10:06:08.808"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190807 20:45:12.234" starttime="20190807 20:45:11.000"></status>
+<status status="PASS" endtime="20190808 10:06:18.585" starttime="20190808 10:06:17.394"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
@@ -27,9 +27,9 @@
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:12.249" starttime="20190807 20:45:12.234"></status>
+<status status="PASS" endtime="20190808 10:06:18.607" starttime="20190808 10:06:18.585"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:12.249" starttime="20190807 20:45:03.998"></status>
+<status status="PASS" endtime="20190808 10:06:18.607" starttime="20190808 10:06:08.808"></status>
 </kw>
 <kw name="Click on 'Login' link" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -38,15 +38,15 @@
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:12.265" starttime="20190807 20:45:12.249"></status>
+<status status="PASS" endtime="20190808 10:06:18.607" starttime="20190808 10:06:18.607"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:12.265" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
-<status status="PASS" endtime="20190807 20:45:12.511" starttime="20190807 20:45:12.265"></status>
+<msg timestamp="20190808 10:06:18.607" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
+<status status="PASS" endtime="20190808 10:06:18.830" starttime="20190808 10:06:18.607"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
@@ -54,9 +54,9 @@
 <arg>&amp;{LOGIN_PAGE}[label_Signin]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:12.536" starttime="20190807 20:45:12.511"></status>
+<status status="PASS" endtime="20190808 10:06:18.861" starttime="20190808 10:06:18.831"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:12.536" starttime="20190807 20:45:12.249"></status>
+<status status="PASS" endtime="20190808 10:06:18.861" starttime="20190808 10:06:18.607"></status>
 </kw>
 <kw name="Input username" library="login_page">
 <arguments>
@@ -68,7 +68,7 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:12.558" starttime="20190807 20:45:12.536"></status>
+<status status="PASS" endtime="20190808 10:06:18.888" starttime="20190808 10:06:18.864"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -76,10 +76,10 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:12.558" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
-<status status="PASS" endtime="20190807 20:45:12.644" starttime="20190807 20:45:12.558"></status>
+<msg timestamp="20190808 10:06:18.888" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
+<status status="PASS" endtime="20190808 10:06:18.994" starttime="20190808 10:06:18.888"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:12.644" starttime="20190807 20:45:12.536"></status>
+<status status="PASS" endtime="20190808 10:06:18.995" starttime="20190808 10:06:18.863"></status>
 </kw>
 <kw name="Input password" library="login_page">
 <arguments>
@@ -91,7 +91,7 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:12.659" starttime="20190807 20:45:12.644"></status>
+<status status="PASS" endtime="20190808 10:06:19.013" starttime="20190808 10:06:18.996"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -99,10 +99,10 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:12.659" level="INFO">Typing text '1234' into text field 'id=Password'.</msg>
-<status status="PASS" endtime="20190807 20:45:12.747" starttime="20190807 20:45:12.659"></status>
+<msg timestamp="20190808 10:06:19.014" level="INFO">Typing text '1234' into text field 'id=Password'.</msg>
+<status status="PASS" endtime="20190808 10:06:19.070" starttime="20190808 10:06:19.013"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:12.747" starttime="20190807 20:45:12.644"></status>
+<status status="PASS" endtime="20190808 10:06:19.071" starttime="20190808 10:06:18.995"></status>
 </kw>
 <kw name="Click on 'Login' button" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -111,17 +111,17 @@
 <arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:12.767" starttime="20190807 20:45:12.749"></status>
+<status status="PASS" endtime="20190808 10:06:19.091" starttime="20190808 10:06:19.071"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:12.767" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" endtime="20190807 20:45:13.759" starttime="20190807 20:45:12.767"></status>
+<msg timestamp="20190808 10:06:19.092" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20190808 10:06:20.207" starttime="20190808 10:06:19.091"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:13.759" starttime="20190807 20:45:12.749"></status>
+<status status="PASS" endtime="20190808 10:06:20.207" starttime="20190808 10:06:19.071"></status>
 </kw>
 <kw name="Verify user login success with say 'Hello &lt;logged in username&gt;'" library="login_page">
 <arguments>
@@ -133,7 +133,7 @@
 <arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:13.802" starttime="20190807 20:45:13.762"></status>
+<status status="PASS" endtime="20190808 10:06:20.226" starttime="20190808 10:06:20.209"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -143,8 +143,8 @@
 <assign>
 <var>${label}</var>
 </assign>
-<msg timestamp="20190807 20:45:13.834" level="INFO">${label} = Hello admin</msg>
-<status status="PASS" endtime="20190807 20:45:13.834" starttime="20190807 20:45:13.802"></status>
+<msg timestamp="20190808 10:06:20.257" level="INFO">${label} = Hello admin</msg>
+<status status="PASS" endtime="20190808 10:06:20.257" starttime="20190808 10:06:20.226"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -152,19 +152,19 @@
 <arg>${label}</arg>
 <arg>&amp;{WORD_LOGIN_PAGE}[Hello] ${username}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:13.834" starttime="20190807 20:45:13.834"></status>
+<status status="PASS" endtime="20190808 10:06:20.258" starttime="20190808 10:06:20.258"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:13.837" starttime="20190807 20:45:13.759"></status>
+<status status="PASS" endtime="20190808 10:06:20.258" starttime="20190808 10:06:20.208"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190807 20:45:16.997" starttime="20190807 20:45:13.837"></status>
+<status status="PASS" endtime="20190808 10:06:23.412" starttime="20190808 10:06:20.259"></status>
 </kw>
 <tags>
 <tag>Login</tag>
 <tag>Regression</tag>
 </tags>
-<status status="PASS" endtime="20190807 20:45:17.000" critical="yes" starttime="20190807 20:45:03.998"></status>
+<status status="PASS" endtime="20190808 10:06:23.412" critical="yes" starttime="20190808 10:06:08.808"></status>
 </test>
 <test id="s1-s1-t2" name="Login should not success with valid username and wrong password">
 <kw type="setup" name="Open application" library="login_page">
@@ -178,12 +178,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:17.020" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
-<status status="PASS" endtime="20190807 20:45:24.258" starttime="20190807 20:45:17.017"></status>
+<msg timestamp="20190808 10:06:23.428" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
+<status status="PASS" endtime="20190808 10:06:32.687" starttime="20190808 10:06:23.428"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190807 20:45:25.442" starttime="20190807 20:45:24.258"></status>
+<status status="PASS" endtime="20190808 10:06:33.853" starttime="20190808 10:06:32.688"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
@@ -191,9 +191,9 @@
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:25.454" starttime="20190807 20:45:25.442"></status>
+<status status="PASS" endtime="20190808 10:06:33.880" starttime="20190808 10:06:33.853"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:25.454" starttime="20190807 20:45:17.015"></status>
+<status status="PASS" endtime="20190808 10:06:33.880" starttime="20190808 10:06:23.428"></status>
 </kw>
 <kw name="Click on 'Login' link" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -202,15 +202,15 @@
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:25.470" starttime="20190807 20:45:25.454"></status>
+<status status="PASS" endtime="20190808 10:06:33.888" starttime="20190808 10:06:33.881"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:25.470" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
-<status status="PASS" endtime="20190807 20:45:25.751" starttime="20190807 20:45:25.470"></status>
+<msg timestamp="20190808 10:06:33.888" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
+<status status="PASS" endtime="20190808 10:06:34.119" starttime="20190808 10:06:33.888"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
@@ -218,9 +218,9 @@
 <arg>&amp;{LOGIN_PAGE}[label_Signin]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:25.774" starttime="20190807 20:45:25.751"></status>
+<status status="PASS" endtime="20190808 10:06:34.138" starttime="20190808 10:06:34.119"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:25.774" starttime="20190807 20:45:25.454"></status>
+<status status="PASS" endtime="20190808 10:06:34.138" starttime="20190808 10:06:33.881"></status>
 </kw>
 <kw name="Input username" library="login_page">
 <arguments>
@@ -232,7 +232,7 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:25.804" starttime="20190807 20:45:25.776"></status>
+<status status="PASS" endtime="20190808 10:06:34.157" starttime="20190808 10:06:34.141"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -240,10 +240,10 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:25.804" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
-<status status="PASS" endtime="20190807 20:45:25.894" starttime="20190807 20:45:25.804"></status>
+<msg timestamp="20190808 10:06:34.158" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
+<status status="PASS" endtime="20190808 10:06:34.241" starttime="20190808 10:06:34.157"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:25.894" starttime="20190807 20:45:25.776"></status>
+<status status="PASS" endtime="20190808 10:06:34.241" starttime="20190808 10:06:34.140"></status>
 </kw>
 <kw name="Input password" library="login_page">
 <arguments>
@@ -255,7 +255,7 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:25.909" starttime="20190807 20:45:25.894"></status>
+<status status="PASS" endtime="20190808 10:06:34.257" starttime="20190808 10:06:34.242"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -263,10 +263,10 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:25.912" level="INFO">Typing text '123' into text field 'id=Password'.</msg>
-<status status="PASS" endtime="20190807 20:45:25.987" starttime="20190807 20:45:25.909"></status>
+<msg timestamp="20190808 10:06:34.257" level="INFO">Typing text '123' into text field 'id=Password'.</msg>
+<status status="PASS" endtime="20190808 10:06:34.326" starttime="20190808 10:06:34.257"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:25.987" starttime="20190807 20:45:25.894"></status>
+<status status="PASS" endtime="20190808 10:06:34.326" starttime="20190808 10:06:34.242"></status>
 </kw>
 <kw name="Click on 'Login' button" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -275,17 +275,17 @@
 <arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:26.002" starttime="20190807 20:45:25.987"></status>
+<status status="PASS" endtime="20190808 10:06:34.340" starttime="20190808 10:06:34.327"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:26.002" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" endtime="20190807 20:45:26.859" starttime="20190807 20:45:26.002"></status>
+<msg timestamp="20190808 10:06:34.341" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20190808 10:06:35.200" starttime="20190808 10:06:34.340"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:26.859" starttime="20190807 20:45:25.987"></status>
+<status status="PASS" endtime="20190808 10:06:35.201" starttime="20190808 10:06:34.326"></status>
 </kw>
 <kw name="Verify message alert 'UserName or password is not correct' is display" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -294,7 +294,7 @@
 <arg>&amp;{LOGIN_PAGE}[label_AlertMessaged]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:26.884" starttime="20190807 20:45:26.862"></status>
+<status status="PASS" endtime="20190808 10:06:35.215" starttime="20190808 10:06:35.203"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -304,8 +304,8 @@
 <assign>
 <var>${label}</var>
 </assign>
-<msg timestamp="20190807 20:45:26.917" level="INFO">${label} = UserName or password is not correct</msg>
-<status status="PASS" endtime="20190807 20:45:26.917" starttime="20190807 20:45:26.884"></status>
+<msg timestamp="20190808 10:06:35.244" level="INFO">${label} = UserName or password is not correct</msg>
+<status status="PASS" endtime="20190808 10:06:35.244" starttime="20190808 10:06:35.216"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -314,19 +314,19 @@
 <arg>&amp;{WORD_LOGIN_PAGE}[UsernameOrPasswordIsNotCorrect]</arg>
 <arg>ignore_case=False</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:26.919" starttime="20190807 20:45:26.917"></status>
+<status status="PASS" endtime="20190808 10:06:35.244" starttime="20190808 10:06:35.244"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:26.919" starttime="20190807 20:45:26.862"></status>
+<status status="PASS" endtime="20190808 10:06:35.244" starttime="20190808 10:06:35.202"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190807 20:45:30.057" starttime="20190807 20:45:26.919"></status>
+<status status="PASS" endtime="20190808 10:06:38.409" starttime="20190808 10:06:35.245"></status>
 </kw>
 <tags>
 <tag>Login</tag>
 <tag>Regression</tag>
 </tags>
-<status status="PASS" endtime="20190807 20:45:30.057" critical="yes" starttime="20190807 20:45:17.012"></status>
+<status status="PASS" endtime="20190808 10:06:38.409" critical="yes" starttime="20190808 10:06:23.428"></status>
 </test>
 <test id="s1-s1-t3" name="User can logout by click on 'Logout' button on navigation bar">
 <kw type="setup" name="Open application" library="login_page">
@@ -340,12 +340,12 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:30.072" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
-<status status="PASS" endtime="20190807 20:45:36.988" starttime="20190807 20:45:30.072"></status>
+<msg timestamp="20190808 10:06:38.424" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
+<status status="PASS" endtime="20190808 10:06:46.252" starttime="20190808 10:06:38.424"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190807 20:45:38.193" starttime="20190807 20:45:36.988"></status>
+<status status="PASS" endtime="20190808 10:06:47.433" starttime="20190808 10:06:46.252"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
@@ -353,9 +353,9 @@
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:38.209" starttime="20190807 20:45:38.193"></status>
+<status status="PASS" endtime="20190808 10:06:47.447" starttime="20190808 10:06:47.433"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:38.209" starttime="20190807 20:45:30.072"></status>
+<status status="PASS" endtime="20190808 10:06:47.447" starttime="20190808 10:06:38.424"></status>
 </kw>
 <kw name="Click on 'Login' link" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -364,15 +364,15 @@
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:38.224" starttime="20190807 20:45:38.209"></status>
+<status status="PASS" endtime="20190808 10:06:47.460" starttime="20190808 10:06:47.448"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:38.224" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
-<status status="PASS" endtime="20190807 20:45:38.450" starttime="20190807 20:45:38.224"></status>
+<msg timestamp="20190808 10:06:47.460" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
+<status status="PASS" endtime="20190808 10:06:47.665" starttime="20190808 10:06:47.460"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
@@ -380,21 +380,18 @@
 <arg>&amp;{LOGIN_PAGE}[label_Signin]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:38.487" starttime="20190807 20:45:38.450"></status>
+<status status="PASS" endtime="20190808 10:06:47.694" starttime="20190808 10:06:47.665"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:38.487" starttime="20190807 20:45:38.209"></status>
+<status status="PASS" endtime="20190808 10:06:47.694" starttime="20190808 10:06:47.447"></status>
 </kw>
-<kw name="Input username" library="login_page">
-<arguments>
-<arg>${USERNAME_VALID}</arg>
-</arguments>
+<kw name="Input username 'admin'" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:38.517" starttime="20190807 20:45:38.490"></status>
+<status status="PASS" endtime="20190808 10:06:47.722" starttime="20190808 10:06:47.700"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -402,10 +399,10 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:38.520" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
-<status status="PASS" endtime="20190807 20:45:38.619" starttime="20190807 20:45:38.520"></status>
+<msg timestamp="20190808 10:06:47.723" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
+<status status="PASS" endtime="20190808 10:06:47.890" starttime="20190808 10:06:47.722"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:38.619" starttime="20190807 20:45:38.487"></status>
+<status status="PASS" endtime="20190808 10:06:47.890" starttime="20190808 10:06:47.699"></status>
 </kw>
 <kw name="Input password" library="login_page">
 <arguments>
@@ -417,7 +414,7 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:38.644" starttime="20190807 20:45:38.619"></status>
+<status status="PASS" endtime="20190808 10:06:47.910" starttime="20190808 10:06:47.891"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -425,10 +422,10 @@
 <arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190807 20:45:38.644" level="INFO">Typing text '1234' into text field 'id=Password'.</msg>
-<status status="PASS" endtime="20190807 20:45:38.732" starttime="20190807 20:45:38.644"></status>
+<msg timestamp="20190808 10:06:47.911" level="INFO">Typing text '1234' into text field 'id=Password'.</msg>
+<status status="PASS" endtime="20190808 10:06:47.996" starttime="20190808 10:06:47.910"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:38.732" starttime="20190807 20:45:38.619"></status>
+<status status="PASS" endtime="20190808 10:06:47.996" starttime="20190808 10:06:47.890"></status>
 </kw>
 <kw name="Click on 'Login' button" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -437,17 +434,17 @@
 <arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:38.749" starttime="20190807 20:45:38.734"></status>
+<status status="PASS" endtime="20190808 10:06:48.015" starttime="20190808 10:06:47.997"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:38.749" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" endtime="20190807 20:45:39.744" starttime="20190807 20:45:38.749"></status>
+<msg timestamp="20190808 10:06:48.015" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20190808 10:06:49.575" starttime="20190808 10:06:48.015"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:39.747" starttime="20190807 20:45:38.734"></status>
+<status status="PASS" endtime="20190808 10:06:49.576" starttime="20190808 10:06:47.997"></status>
 </kw>
 <kw name="Verify user login success with say 'Hello &lt;logged in username&gt;'" library="login_page">
 <arguments>
@@ -459,7 +456,7 @@
 <arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:39.784" starttime="20190807 20:45:39.752"></status>
+<status status="PASS" endtime="20190808 10:06:49.591" starttime="20190808 10:06:49.577"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -469,8 +466,8 @@
 <assign>
 <var>${label}</var>
 </assign>
-<msg timestamp="20190807 20:45:39.824" level="INFO">${label} = Hello admin</msg>
-<status status="PASS" endtime="20190807 20:45:39.824" starttime="20190807 20:45:39.787"></status>
+<msg timestamp="20190808 10:06:49.621" level="INFO">${label} = Hello admin</msg>
+<status status="PASS" endtime="20190808 10:06:49.621" starttime="20190808 10:06:49.591"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -478,9 +475,9 @@
 <arg>${label}</arg>
 <arg>&amp;{WORD_LOGIN_PAGE}[Hello] ${username}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:39.824" starttime="20190807 20:45:39.824"></status>
+<status status="PASS" endtime="20190808 10:06:49.622" starttime="20190808 10:06:49.621"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:39.824" starttime="20190807 20:45:39.749"></status>
+<status status="PASS" endtime="20190808 10:06:49.622" starttime="20190808 10:06:49.576"></status>
 </kw>
 <kw name="Click on 'Logout' button" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -489,17 +486,17 @@
 <arg>&amp;{LOGIN_PAGE}[btn_Logout]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:39.840" starttime="20190807 20:45:39.824"></status>
+<status status="PASS" endtime="20190808 10:06:49.636" starttime="20190808 10:06:49.622"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>&amp;{LOGIN_PAGE}[btn_Logout]</arg>
 </arguments>
-<msg timestamp="20190807 20:45:39.840" level="INFO">Clicking element 'xpath=//button[@type='submit'][text()='Logout']'.</msg>
-<status status="PASS" endtime="20190807 20:45:40.151" starttime="20190807 20:45:39.840"></status>
+<msg timestamp="20190808 10:06:49.637" level="INFO">Clicking element 'xpath=//button[@type='submit'][text()='Logout']'.</msg>
+<status status="PASS" endtime="20190808 10:06:50.011" starttime="20190808 10:06:49.636"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:40.153" starttime="20190807 20:45:39.824"></status>
+<status status="PASS" endtime="20190808 10:06:50.011" starttime="20190808 10:06:49.622"></status>
 </kw>
 <kw name="Verify user logout success by navigation bar show 'Login' link" library="login_page">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -508,7 +505,7 @@
 <arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
 <arg>${GLOBAL_TIMEOUT}</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:40.176" starttime="20190807 20:45:40.156"></status>
+<status status="PASS" endtime="20190808 10:06:50.027" starttime="20190808 10:06:50.012"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -518,8 +515,8 @@
 <assign>
 <var>${label}</var>
 </assign>
-<msg timestamp="20190807 20:45:40.208" level="INFO">${label} = Login</msg>
-<status status="PASS" endtime="20190807 20:45:40.208" starttime="20190807 20:45:40.176"></status>
+<msg timestamp="20190808 10:06:50.050" level="INFO">${label} = Login</msg>
+<status status="PASS" endtime="20190808 10:06:50.050" starttime="20190808 10:06:50.027"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -527,38 +524,265 @@
 <arg>${label}</arg>
 <arg>&amp;{WORD_LOGIN_PAGE}[Login]</arg>
 </arguments>
-<status status="PASS" endtime="20190807 20:45:40.208" starttime="20190807 20:45:40.208"></status>
+<status status="PASS" endtime="20190808 10:06:50.050" starttime="20190808 10:06:50.050"></status>
 </kw>
-<status status="PASS" endtime="20190807 20:45:40.208" starttime="20190807 20:45:40.153"></status>
+<status status="PASS" endtime="20190808 10:06:50.050" starttime="20190808 10:06:50.012"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190807 20:45:43.437" starttime="20190807 20:45:40.208"></status>
+<status status="PASS" endtime="20190808 10:06:53.187" starttime="20190808 10:06:50.051"></status>
 </kw>
 <tags>
 <tag>Login</tag>
 <tag>Logout</tag>
 <tag>Regression</tag>
 </tags>
-<status status="PASS" endtime="20190807 20:45:43.437" critical="yes" starttime="20190807 20:45:30.072"></status>
+<status status="PASS" endtime="20190808 10:06:53.187" critical="yes" starttime="20190808 10:06:38.424"></status>
 </test>
-<status status="PASS" endtime="20190807 20:45:43.437" starttime="20190807 20:45:03.795"></status>
+<test id="s1-s1-t4" name="'Admin' can logout by click on 'Logout' button on navigation bar">
+<kw type="setup" name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" endtime="20190808 10:06:53.202" starttime="20190808 10:06:53.202"></status>
+</kw>
+<kw name="Given User login to my cos tech as 'admin'" library="login_page">
+<kw name="Open application" library="login_page">
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190808 10:06:53.218" level="INFO">Opening browser 'Chrome' to base url 'https://mycossite.azurewebsites.net'.</msg>
+<status status="PASS" endtime="20190808 10:07:02.320" starttime="20190808 10:06:53.218"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190808 10:07:03.480" starttime="20190808 10:07:02.321"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:03.509" starttime="20190808 10:07:03.481"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:03.509" starttime="20190808 10:06:53.202"></status>
+</kw>
+<kw name="Click on 'Login' link" library="login_page">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:03.521" starttime="20190808 10:07:03.510"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[link_Login]</arg>
+</arguments>
+<msg timestamp="20190808 10:07:03.521" level="INFO">Clicking element 'xpath=//a[text()='Login']'.</msg>
+<status status="PASS" endtime="20190808 10:07:03.766" starttime="20190808 10:07:03.521"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[label_Signin]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:03.782" starttime="20190808 10:07:03.766"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:03.782" starttime="20190808 10:07:03.509"></status>
+</kw>
+<kw name="Input username" library="login_page">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:03.799" starttime="20190808 10:07:03.782"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[txt_Username]</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190808 10:07:03.800" level="INFO">Typing text 'admin' into text field 'id=Username'.</msg>
+<status status="PASS" endtime="20190808 10:07:03.871" starttime="20190808 10:07:03.799"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:03.872" starttime="20190808 10:07:03.782"></status>
+</kw>
+<kw name="Input password" library="login_page">
+<arguments>
+<arg>${PASSWORD_VALID}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:03.884" starttime="20190808 10:07:03.872"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[txt_Password]</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190808 10:07:03.885" level="INFO">Typing text '1234' into text field 'id=Password'.</msg>
+<status status="PASS" endtime="20190808 10:07:03.944" starttime="20190808 10:07:03.884"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:03.944" starttime="20190808 10:07:03.872"></status>
+</kw>
+<kw name="Click on 'Login' button" library="login_page">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:03.957" starttime="20190808 10:07:03.945"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[btn_Login]</arg>
+</arguments>
+<msg timestamp="20190808 10:07:03.957" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20190808 10:07:05.247" starttime="20190808 10:07:03.957"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.247" starttime="20190808 10:07:03.944"></status>
+</kw>
+<kw name="Verify user login success with say 'Hello &lt;logged in username&gt;'" library="login_page">
+<arguments>
+<arg>${USERNAME_VALID}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:05.264" starttime="20190808 10:07:05.248"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
+</arguments>
+<assign>
+<var>${label}</var>
+</assign>
+<msg timestamp="20190808 10:07:05.295" level="INFO">${label} = Hello admin</msg>
+<status status="PASS" endtime="20190808 10:07:05.295" starttime="20190808 10:07:05.265"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${label}</arg>
+<arg>&amp;{WORD_LOGIN_PAGE}[Hello] ${username}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:05.296" starttime="20190808 10:07:05.295"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.296" starttime="20190808 10:07:05.247"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.297" starttime="20190808 10:06:53.202"></status>
+</kw>
+<kw name="When User click on Logout button" library="login_page">
+<kw name="Click on 'Logout' button" library="login_page">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[btn_Logout]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:05.316" starttime="20190808 10:07:05.298"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[btn_Logout]</arg>
+</arguments>
+<msg timestamp="20190808 10:07:05.316" level="INFO">Clicking element 'xpath=//button[@type='submit'][text()='Logout']'.</msg>
+<status status="PASS" endtime="20190808 10:07:05.633" starttime="20190808 10:07:05.316"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.633" starttime="20190808 10:07:05.297"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.634" starttime="20190808 10:07:05.297"></status>
+</kw>
+<kw name="Then User logout successful and is bring to landding page" library="login_page">
+<kw name="Verify user logout success by navigation bar show 'Login' link" library="login_page">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
+<arg>${GLOBAL_TIMEOUT}</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:05.654" starttime="20190808 10:07:05.638"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>&amp;{LOGIN_PAGE}[label_TextOnNavBar]</arg>
+</arguments>
+<assign>
+<var>${label}</var>
+</assign>
+<msg timestamp="20190808 10:07:05.681" level="INFO">${label} = Login</msg>
+<status status="PASS" endtime="20190808 10:07:05.681" starttime="20190808 10:07:05.654"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${label}</arg>
+<arg>&amp;{WORD_LOGIN_PAGE}[Login]</arg>
+</arguments>
+<status status="PASS" endtime="20190808 10:07:05.682" starttime="20190808 10:07:05.681"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.682" starttime="20190808 10:07:05.637"></status>
+</kw>
+<status status="PASS" endtime="20190808 10:07:05.682" starttime="20190808 10:07:05.636"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190808 10:07:08.767" starttime="20190808 10:07:05.683"></status>
+</kw>
+<tags>
+<tag>Login</tag>
+<tag>Logout</tag>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20190808 10:07:08.767" critical="yes" starttime="20190808 10:06:53.202"></status>
+</test>
+<status status="PASS" endtime="20190808 10:07:08.787" starttime="20190808 10:06:08.606"></status>
 </suite>
-<status status="PASS" endtime="20190807 20:45:43.468" starttime="20190807 20:45:03.780"></status>
+<status status="PASS" endtime="20190808 10:07:08.807" starttime="20190808 10:06:08.590"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="3">Login</stat>
-<stat fail="0" pass="1">Logout</stat>
-<stat fail="0" pass="3">Regression</stat>
+<stat fail="0" pass="4">Login</stat>
+<stat fail="0" pass="2">Logout</stat>
+<stat fail="0" pass="4">Regression</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="TestScenarios" pass="3">TestScenarios</stat>
-<stat fail="0" id="s1-s1" name="Login" pass="3">TestScenarios.Login</stat>
+<stat fail="0" id="s1" name="TestScenarios" pass="4">TestScenarios</stat>
+<stat fail="0" id="s1-s1" name="Login" pass="4">TestScenarios.Login</stat>
 </suite>
 </statistics>
 <errors>
